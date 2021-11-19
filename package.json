@@ -1,7 +1,7 @@
 {
   "name": "adventwp",
   "version": "1.0.0",
-  "description": "A plugin that is the same backwards and forwards",
+  "description": "A WordPress plugin framework for the Advent of Code puzzles",
   "main": "index.js",
   "scripts": {
     "cli": "wp-env run cli",

@@ -25,7 +25,7 @@ function adventwp_autoloader( $class )
     $path[]     = $file_name;
 
     $class_path = implode('/', $path);
-    $class_path = adventwp_DIR . 'src/' . $class_path;
+    $class_path = ADVENTWP_DIR . 'src/' . $class_path;
 
     include $class_path;
 }

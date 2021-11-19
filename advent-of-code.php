@@ -14,7 +14,7 @@
  * Domain Path:       /assets/lang
  */
 
-namespace Tacocat;
+namespace AdventOfCode;
 
 /*
     Copyright (C) 2021 Mike Straw
