@@ -1,0 +1,16 @@
+{
+    "name": "geojunkie/adventwp",
+    "description": "A plugin framework for the Advent of Code challenges.",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+    },
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Mike Straw",
+            "email": "mike.straw@automattic.com"
+        }
+    ]
+}
