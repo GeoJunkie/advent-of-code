@@ -4,8 +4,8 @@
  * Plugin URI:        https://github.com/GeoJunkie/advent-of-code
  * Description:       A plugin framework for the Advent of Code challenges.
  * Version:           1.0.0
- * Requires at least: TBD
- * Requires PHP:      5.1
+ * Requires at least: 5.3
+ * Requires PHP:      7.4.0
  * Author:            Mike Straw
  * Author URI:        https://github.com/GeoJunkie/
  * License:           GPL v2 or later
@@ -38,19 +38,18 @@ if (! defined('ABSPATH') ) {
     exit; 
 }    
 
-error_log('Made it'    );
-define('ADVENTWP_DIR', plugin_dir_path(__FILE__));
+define('ADVENT_OF_CODE_DIR', plugin_dir_path(__FILE__));
 
 register_activation_hook(
-    ADVENTWP_DIR, function () {
-        include_once ADVENTWP_DIR . 'src/class-activator.php';
+    ADVENT_OF_CODE_DIR, function () {
+        include_once ADVENT_OF_CODE_DIR . 'src/class-activator.php';
         Activator::activate();
     }
 );
 
 register_deactivation_hook(
     __FILE__, function () {
-        include_once ADVENTWP_DIR . 'src/class-deactivator.php';
+        include_once ADVENT_OF_CODE_DIR . 'src/class-deactivator.php';
     }
 );
 
@@ -58,7 +57,7 @@ register_deactivation_hook(
  * Load the autoloader to bring in class files automattically
  */
 
-require_once ADVENTWP_DIR . 'src/loader.php';
+require_once ADVENT_OF_CODE_DIR . 'src/loader.php';
 
 /**
  * Load the plugin class.

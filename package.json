@@ -1,5 +1,5 @@
 {
-  "name": "adventwp",
+  "name": "advent-of-code",
   "version": "1.0.0",
   "description": "A WordPress plugin framework for the Advent of Code puzzles",
   "main": "index.js",

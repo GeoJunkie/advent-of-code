@@ -1,5 +1,5 @@
 {
-    "name": "geojunkie/adventwp",
+    "name": "geojunkie/advent-of-code",
     "description": "A plugin framework for the Advent of Code challenges.",
     "type": "wordpress-plugin",
     "require-dev": {

@@ -9,7 +9,7 @@ class Activator {
 		$role = get_role( 'administrator' );
 
 		if ( ! empty( $role ) ) {
-			$role->add_cap( 'adventwp_manage' );
+			$role->add_cap( 'advent_of_code_manage' );
 		}
 	}
 }

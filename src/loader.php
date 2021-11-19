@@ -1,8 +1,6 @@
 <?php
 
-error_log('LOADER LOADED');
-
-function adventwp_autoloader( $class )
+function advent_of_code_autoloader( $class )
 {
     // Prevent it firing for any other plugins.
     if (strpos($class, 'AdventOfCode') !== 0 ) {
@@ -25,9 +23,9 @@ function adventwp_autoloader( $class )
     $path[]     = $file_name;
 
     $class_path = implode('/', $path);
-    $class_path = ADVENTWP_DIR . 'src/' . $class_path;
+    $class_path = ADVENT_OF_CODE_DIR . 'src/' . $class_path;
 
     include $class_path;
 }
 
-spl_autoload_register('adventwp_autoloader');
+spl_autoload_register('advent_of_code_autoloader');

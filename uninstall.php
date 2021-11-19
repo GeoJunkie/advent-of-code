@@ -11,5 +11,5 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 $role = get_role( 'administrator' );
 
 if ( ! empty( $role ) ) {
-	$role->remove_cap( 'adventwp_manage' );
+	$role->remove_cap( 'advent_of_code_manage' );
 }
