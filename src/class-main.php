@@ -20,5 +20,7 @@ class Main {
 	public static function start() {
 		/* Load everything else here */
 		error_log( 'Started' );
+
+		Admin::init();
 	}
 }

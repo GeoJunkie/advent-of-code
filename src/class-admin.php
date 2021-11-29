@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Loads all admin functions
  */
 class Admin {
-	public function __construct() {
+	public static function init() {
 		error_log( 'Initializing admin menus' );
-		Menus::init();
+		Admin\Menus::init();
 	}
 }
