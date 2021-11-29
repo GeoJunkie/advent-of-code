@@ -17,7 +17,7 @@
     "resetdb": "wp-env clean all",
     "update": "wp-env start --update",
     "wp-env": "wp-env",
-    "xdebug": "wp-env start --debug"
+    "xdebug": "wp-env start --xdebug"
   },
   "repository": {
     "type": "git",

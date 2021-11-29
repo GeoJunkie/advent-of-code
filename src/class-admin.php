@@ -1,14 +1,18 @@
 <?php
 namespace AdventOfCode;
 
-if (! defined('ABSPATH') ) {
-    exit;
+use Admin\Menus;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
 /**
  * Loads all admin functions
  */
-class Admin
-{
-
+class Admin {
+	public function __construct() {
+		error_log( 'Initializing admin menus' );
+		Menus::init();
+	}
 }

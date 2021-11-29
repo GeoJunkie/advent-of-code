@@ -5,21 +5,20 @@
 
 namespace AdventOfCode;
 
-if (! defined('ABSPATH') ) {
-    exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-class Main
-{
+class Main {
 
-    /**
-     * Starts the plugin
-     *
-     * @return void
-     */
-    static public function start()
-    {
-        /* Load everything else here */
-        error_log('Started');
-    }
+
+	/**
+	 * Starts the plugin
+	 *
+	 * @return void
+	 */
+	public static function start() {
+		/* Load everything else here */
+		error_log( 'Started' );
+	}
 }
